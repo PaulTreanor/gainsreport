@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PersonalRecord, Workout } from "@/lib/types";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -20,7 +20,6 @@ interface InsightsTabProps {
 }
 
 export function InsightsTab({
-  workouts,
   personalRecords,
   streakData,
   daysSinceLastWorkout,

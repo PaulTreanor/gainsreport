@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WorkoutFetcher } from "@/components/WorkoutFetcher";
 import { WorkoutTimeline } from "@/components/WorkoutTimeline";
@@ -9,7 +9,7 @@ import { Loader2 } from "lucide-react";
 
 function App() {
   // Use GitHub URL to fetch workout data
-  const [workoutLogUrl, setWorkoutLogUrl] = useState<string>("https://raw.githubusercontent.com/PaulTreanor/workout-log/main/2025.md");
+  const [workoutLogUrl] = useState<string>("https://raw.githubusercontent.com/PaulTreanor/workout-log/main/2025.md");
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
